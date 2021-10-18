@@ -1,0 +1,22 @@
+uuid: ca97b42d-3396-4827-ad57-998f4f862e2c
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - card_grid
+    - hal
+    - serialization
+    - user
+id: card_rest_resource
+plugin_id: card_rest_resource
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - hal_json
+    - json
+  authentication:
+    - basic_auth
+    - cookie
