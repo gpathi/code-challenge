@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains card_grid.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function card_grid_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the card_grid module.
+    case 'help.page.card_grid':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Card grid module for code challenge') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function card_grid_theme() {
+  return [
+    'card_grid' => [
+      'render element' => 'children',
+    ],
+  ];
+}

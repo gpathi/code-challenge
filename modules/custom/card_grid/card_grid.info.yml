@@ -1,0 +1,5 @@
+name: 'card-grid'
+type: module
+description: 'Card grid module for code challenge'
+core: 8.x
+package: 'Code Challenge'
